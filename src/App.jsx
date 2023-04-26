@@ -1,14 +1,12 @@
 import { useState } from "react";
 import "./App.css";
+import Increment from "./components/Increment";
 
 const App = () => {
   console.log("je suis render");
 
   const [counter, setCounter] = useState(0);
 
-  const handleCounter = () => {
-    setCounter(counter + 1);
-  };
   const updateCounter = () => {
     if (counter > 0) {
       setCounter(counter - 1);
@@ -22,7 +20,7 @@ const App = () => {
       <section>
         <button onClick={updateCounter}>-</button>
         <p>{counter}</p>
-        <button onClick={handleCounter}>+</button>
+        <Increment counter={counter} setCounter={setCounter} />
       </section>
       <button onClick={deleteCounter}>Reset</button>
     </div>
