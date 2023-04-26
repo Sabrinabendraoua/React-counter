@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  max-width: 1284px;
+}
+.style-app,
+section,
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.style-app {
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+p {
+  background-color: #5c47d3;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  color: white;
+}
