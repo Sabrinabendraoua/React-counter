@@ -9,9 +9,10 @@ const App = () => {
   const handleCounter = () => {
     setCounter(counter + 1);
   };
-
   const updateCounter = () => {
-    setCounter(counter - 1);
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
   };
   const deleteCounter = () => {
     setCounter(0);
@@ -21,7 +22,7 @@ const App = () => {
       <section>
         <button onClick={updateCounter}>-</button>
         <p
-          className={counter === handleCounter ? handleCounter : updateCounter}
+          className={{ handleCounter } ? { handleCounter } : { updateCounter }}
         >
           {counter}
         </p>
