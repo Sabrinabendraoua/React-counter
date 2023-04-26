@@ -21,11 +21,7 @@ const App = () => {
     <div className="style-app">
       <section>
         <button onClick={updateCounter}>-</button>
-        <p
-          className={{ handleCounter } ? { handleCounter } : { updateCounter }}
-        >
-          {counter}
-        </p>
+        <p>{counter}</p>
         <button onClick={handleCounter}>+</button>
       </section>
       <button onClick={deleteCounter}>Reset</button>
