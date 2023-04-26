@@ -7,7 +7,7 @@ const update = (props) => {
         }
       }}
     >
-      -
+      {props.counter === 0 ? " " : "-"}
     </button>
   );
 };

@@ -24,3 +24,6 @@ p {
   border-radius: 5px;
   color: white;
 }
+button {
+  text-decoration: none;
+}
