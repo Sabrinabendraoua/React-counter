@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Increment from "./components/Increment";
+import Reset from "./components/Reset";
 
 const App = () => {
   console.log("je suis render");
@@ -12,9 +13,7 @@ const App = () => {
       setCounter(counter - 1);
     }
   };
-  const deleteCounter = () => {
-    setCounter(0);
-  };
+
   return (
     <div className="style-app">
       <section>
@@ -22,7 +21,7 @@ const App = () => {
         <p>{counter}</p>
         <Increment counter={counter} setCounter={setCounter} />
       </section>
-      <button onClick={deleteCounter}>Reset</button>
+      <Reset setCounter={setCounter} />
     </div>
   );
 };

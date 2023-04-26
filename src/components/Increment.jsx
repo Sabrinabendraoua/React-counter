@@ -1,4 +1,4 @@
-const Increment = (props) => {
+const increment = (props) => {
   return (
     <button
       onClick={() => {
@@ -10,4 +10,4 @@ const Increment = (props) => {
   );
 };
 
-export default Increment;
+export default increment;
