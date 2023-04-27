@@ -25,5 +25,7 @@ p {
   color: white;
 }
 button {
-  text-decoration: none;
+  all: unset;
+  padding: 1rem;
+  cursor: pointer;
 }

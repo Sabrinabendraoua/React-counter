@@ -5,7 +5,7 @@ const increment = (props) => {
         props.setCounter(props.counter + 1);
       }}
     >
-      {props.counter === 10 ? " " : "+"}
+      {props.counter === 10 ? null : "+"}
     </button>
   );
 };
